@@ -1,0 +1,44 @@
+{
+  "name": "@paragraphcms/components",
+  "version": "0.2.0",
+  "description": "Shared Paragraph CMS component metadata and Tiptap extensions.",
+  "license": "MIT",
+  "author": "Paragraph CMS",
+  "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./tiptap": {
+      "types": "./src/tiptap/index.ts",
+      "import": "./src/tiptap/index.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^3.20.4",
+    "@tiptap/react": "^3.20.4",
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@tiptap/core": {
+      "optional": true
+    },
+    "@tiptap/react": {
+      "optional": true
+    }
+  }
+}
