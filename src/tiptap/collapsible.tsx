@@ -6,7 +6,7 @@ import {
   ReactNodeViewRenderer,
   type NodeViewProps,
 } from "@tiptap/react";
-import { collapsibleComponent } from "../components/collapsible";
+import { collapsibleComponent } from "../components/collapsible.js";
 
 export const COLLAPSIBLE_NODE_NAME = collapsibleComponent.tiptap.node;
 

@@ -1,26 +1,34 @@
 {
   "name": "@paragraphcms/components",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Shared Paragraph CMS component metadata and Tiptap extensions.",
   "license": "MIT",
   "author": "Paragraph CMS",
   "type": "module",
   "sideEffects": false,
+  "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
   "files": [
-    "src",
+    "dist",
     "README.md"
   ],
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "import": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     },
     "./tiptap": {
-      "types": "./src/tiptap/index.ts",
-      "import": "./src/tiptap/index.ts"
+      "types": "./dist/tiptap/index.d.ts",
+      "import": "./dist/tiptap/index.js",
+      "default": "./dist/tiptap/index.js"
     },
     "./package.json": "./package.json"
   },
@@ -40,5 +48,13 @@
     "@tiptap/react": {
       "optional": true
     }
+  },
+  "devDependencies": {
+    "@tiptap/core": "^3.20.4",
+    "@tiptap/react": "^3.20.4",
+    "@types/react": "^19.2.7",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.9.2"
   }
 }

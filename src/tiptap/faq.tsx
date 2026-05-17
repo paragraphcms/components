@@ -6,8 +6,8 @@ import {
   ReactNodeViewRenderer,
   type NodeViewProps,
 } from "@tiptap/react";
-import { faqComponent } from "../components/faq";
-import { COLLAPSIBLE_NODE_NAME } from "./collapsible";
+import { faqComponent } from "../components/faq.js";
+import { COLLAPSIBLE_NODE_NAME } from "./collapsible.js";
 
 declare module "@tiptap/core" {
   interface Commands<ReturnType> {

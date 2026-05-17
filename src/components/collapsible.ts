@@ -1,4 +1,4 @@
-import type { ParagraphComponent } from "../types";
+import type { ParagraphComponent } from "../types.js";
 
 export const collapsibleComponent = {
   id: "collapsible",
