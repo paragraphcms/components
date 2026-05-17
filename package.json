@@ -1,6 +1,6 @@
 {
   "name": "@paragraphcms/components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Shared Paragraph CMS component metadata and Tiptap extensions.",
   "license": "MIT",
   "author": "Paragraph CMS",
